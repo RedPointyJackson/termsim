@@ -1,0 +1,29 @@
+#!/bin/sh
+
+echo "Info: Decombobulating decombobulator..."
+sleep 0.1
+
+echo "Info: Decombobulating decombobulator compinatroric gigavotio manconio maniotronio no nou neutrino..."
+sleep 0.1
+
+echo "Error: Too much combobobulation."
+sleep 0.1
+
+for i in {1..10}; do
+    echo -ne "Computed ${i}/10\r"
+    sleep 0.5
+done
+
+echo "Warning: Fritxen spine."
+
+echo "Schewing fortronics..."
+sleep 0.1
+
+echo "Solving for x..."
+sleep 0.1
+
+for i in {1..100}; do
+    echo -ne "Completed step ${i}...\r"
+	sleep 0.01
+done
+

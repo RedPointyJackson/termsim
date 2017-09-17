@@ -1,0 +1,68 @@
+  #+CAPTION: Termsim logo
+  [[./logo.png]]
+
+
+  Terminal user interface for simulations. Just run your software as
+
+  #+BEGIN_SRC
+  ./termsim your_program your_arg1 your_arg2 your_args
+  #+END_SRC
+
+  ~termsim~ will read ~stdout~ and ~stderr~ and will update the
+  scatterplot or the message area depending on the beginning of the
+  sentence.
+
+** Syntax
+
+   To plot the points ~(0,0,1)~, ~(4,5,6)~ and ~(4,4,7)~, the program
+   running under termsim should output something along the lines of
+
+   #+BEGIN_SRC python
+    print("DATA")
+    print("0 0 1")
+    print("4 5 6")
+    print("4 4 7")
+    print("END")
+   #+END_SRC
+
+   where each print statement adds a newline.
+
+   To add a message, just print it, anything that doesn't begin with
+   ~DATA~ will be treated as a message. ~stderr~ will be merged with
+   ~stdout~ and parsed also by ~termsim~.
+
+   Termsim will apply colors to statements starting by ~Error:~,
+   ~Warning:~ and ~Info:~.
+
+
+** Keybindings
+
+   Feel free to modify them in ~Tui.cpp~.
+
+**** Message box
+
+        - ~p~, ~C-p~ Scroll up.
+        - ~n~, ~C-n~ Scroll down.
+        - ~g~ Go to first message.
+        - ~G~ Go to last message.
+        - ~SPACE~ Toggle autoscroll.
+
+**** Scatter plot
+
+        - ~j~ Rotate down.
+        - ~k~ Rotate up.
+        - ~l~ Rotate right.
+        - ~h~ Rotate left.
+        - ~J~ Move down.
+        - ~K~ Move up.
+        - ~L~ Move right.
+        - ~H~ Move left.
+        - ~i~ Toggle showing of info.
+        - ~+~ Zoom in.
+        - ~-~ Zoom out.
+        - ~r~ Reset scatterplot view.
+
+**** Miscelaneous
+
+        - ~^C~ Exit via /SIGTERM/.
+        - ~C-L~ Redraw screen.
