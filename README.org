@@ -10,11 +10,10 @@
 
   ~termsim~ will read ~stdout~ and ~stderr~ and will update the
   scatterplot or the message area depending on the beginning of the
-  sentence.
+  sentence. Full 3D controls are provided, as one can see [[https://asciinema.org/a/141920][here]].
 
   #+CAPTION: Termsim running a nbody simulation
   [[./sample.png]]
-
 
 ** Syntax
 
