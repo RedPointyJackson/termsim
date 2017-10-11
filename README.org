@@ -2,7 +2,8 @@
   [[./logo.png]]
 
 
-  Terminal user interface for simulations. Just run your software as
+  Terminal user interface for simulations. Just compile with ~make~
+  and run your software as
 
   #+BEGIN_SRC
   ./termsim your_program your_arg1 your_arg2 your_args
@@ -36,7 +37,6 @@
 
    Termsim will apply colors to statements starting by ~Error:~,
    ~Warning:~ and ~Info:~.
-
 
 ** Keybindings
 
