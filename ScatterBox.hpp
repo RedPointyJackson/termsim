@@ -44,7 +44,7 @@ public:
     void draw();
     void zoom(double zoom_change);
     void reset_view();
-    void toggle_info() {show_info = !show_info;};
+    void toggle_info() {show_info = !show_info; draw();};
 };
 
 #endif
